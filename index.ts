@@ -4,7 +4,7 @@ import * as github from '@actions/github'
 import * as io from '@actions/io'
 import * as ioUtil from '@actions/io/lib/io-util'
 
-const DEFAULT_DEPLOY_BRANCH = 'master'
+const DEFAULT_DEPLOY_BRANCH = 'main'
 
 async function run(): Promise<void> {
   try {

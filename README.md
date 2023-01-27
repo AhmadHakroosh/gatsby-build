@@ -44,7 +44,7 @@ configuration options:
   needed for your site. For org and user pages it should always be `master`.
   This is where the output of `gatsby build` will be pushed to. Provided as an
   [input][github-action-input].
-  Defaults to `master`.
+  Defaults to `main`.
 
 - **deploy-repo**: The repository expected by GitHub to have the static files
   needed for your site.
@@ -80,13 +80,12 @@ configuration options:
 ### Org or User Pages
 
 Create a repository with the format `<YOUR/ORG USERNAME>.github.io`, push your
-Gatsby source code to a branch other than `master` and add this GitHub Action to
+Gatsby source code to branch `master` and add this GitHub Action to
 your workflow! 🚀😃
 
 ### Repository Pages
 
-Repo pages give you the option to push your static site to either `master` or
-`gh-pages` branches. They also work a little different because the URL includes
+Repo pages give you the option to push your static site to `main` branch. They also work a little different because the URL includes
 a trailing path with the repository name, like
 `https://username.github.io/reponame/`. You need to tell Gatsby what the path
 prefix is via `gatsby-config.js`:
